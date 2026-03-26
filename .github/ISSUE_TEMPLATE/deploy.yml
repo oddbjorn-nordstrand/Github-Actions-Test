@@ -1,0 +1,24 @@
+name: Azure Deployment Request
+description: Request a new Azure resource deployment
+title: "[Deploy]: "
+labels: ["deployment-request"]
+body:
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Select the target environment
+      options:
+        - "dev"
+        - "staging"
+        - "prod"
+    validations:
+      required: true
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name
+      description: Enter a unique name for the resource
+      placeholder: "example-app-service"
+    validations:
+      required: true
