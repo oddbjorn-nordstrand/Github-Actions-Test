@@ -4,21 +4,37 @@ title: "[Deploy]: "
 labels: ["deployment-request"]
 body:
   - type: dropdown
-    id: environment
+    id: Cluster
     attributes:
-      label: Environment
-      description: Select the target environment
+      label: Cluster
+      description: Select the Azure Local Cluster
       options:
-        - "dev"
-        - "staging"
-        - "prod"
+        - "Azlocal-c1"
+        - "Azlocal-c2"
+        - "Azloc-test-c1"
     validations:
       required: true
-  - type: input
-    id: resource_name
+  - type: dropdown
+    id: Environment
     attributes:
-      label: Resource Name
-      description: Enter a unique name for the resource
-      placeholder: "example-app-service"
+      label: Environment
+      description: Select the which environment the deployment should run in
+      options:
+        - "prod"
+        - "test"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Hostpool
+    attributes:
+      label: Hostpool
+      description: Select which hostpool to deploy
+      options:
+        - "CAD"
+        - "Employee"
+        - "Demo"
+        - "MathStat"
+        - "Scientific"
     validations:
       required: true
