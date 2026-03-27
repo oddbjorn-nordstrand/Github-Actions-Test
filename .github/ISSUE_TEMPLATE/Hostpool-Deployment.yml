@@ -1,6 +1,6 @@
 name: AVD Hostpool Deployment
 description: Start a new AVD Hostpool deployment.
-title: "[Hostpool Deployment]: ${{ github.event.inputs.Hostpool }}-${{ github.event.inputs.Environment }} "
+title: "[Hostpool Deployment]: {{ form.Hostpool }}-{{ form.Environment }} "
 labels: ["deployment-request"]
 body:
   - type: dropdown
