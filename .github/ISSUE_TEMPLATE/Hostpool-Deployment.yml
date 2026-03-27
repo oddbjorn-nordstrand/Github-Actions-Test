@@ -1,6 +1,6 @@
-name: Azure Deployment Request
-description: Request a new Azure resource deployment
-title: "[Deploy]: "
+name: AVD Hostpool Deployment
+description: Start a new AVD Hostpool deployment.
+title: "[Hostpool Deployment]: ${{ github.event.inputs.Hostpool }}-${{ github.event.inputs.Environment }} "
 labels: ["deployment-request"]
 body:
   - type: dropdown
