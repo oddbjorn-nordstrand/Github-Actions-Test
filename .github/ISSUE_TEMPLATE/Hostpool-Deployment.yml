@@ -1,5 +1,5 @@
 name: AVD Hostpool Deployment
-description: Deploy new VMs to a AVD Hostpool.
+description: Deploy new VMs to a Hostpool.
 title: "[AVD Hostpool Deployment]"
 #labels: ["deployment-request"]
 body:
