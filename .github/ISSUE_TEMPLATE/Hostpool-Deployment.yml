@@ -9,9 +9,9 @@ body:
       label: Cluster
       description: Select the Azure Local Cluster
       options:
-        - "Azlocal-c1"
-        - "Azlocal-c2"
-        - "Azloc-test-c1"
+        - "Azlocal-C1"
+        - "Azlocal-C2"
+        - "Azloctest-C1"
     validations:
       required: true
   - type: dropdown
@@ -20,8 +20,8 @@ body:
       label: Environment
       description: Select the which environment the deployment should run in
       options:
-        - "prod"
-        - "test"
+        - "Prod"
+        - "Test"
     validations:
       required: true
 
