@@ -6,7 +6,7 @@ body:
   - type: input
     id: creator
     attributes:
-      label: "Your email address"
+      label: "Creator"
       description: "Please enter your email address so that we can tag the resources with you as the creator."
       placeholder: "email@ntnu.no"
     validations:
