@@ -1,7 +1,7 @@
 name: AVD Hostpool Deployment
-description: Start a new AVD Hostpool deployment.
-title: "[Hostpool Deployment]: {{ form.Hostpool }}-{{ form.Environment }} "
-labels: ["deployment-request"]
+description: Starts a new AVD Hostpool deployment.
+title: "[Hostpool Deployment]: {{ form.Hostpool }} - {{ form.Environment }} "
+#labels: ["deployment-request"]
 body:
   - type: dropdown
     id: Cluster
