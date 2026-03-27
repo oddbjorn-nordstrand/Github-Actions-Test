@@ -3,6 +3,14 @@ description: Deploy new VMs to a AVD Hostpool.
 title: "[AVD Hostpool Deployment]"
 #labels: ["deployment-request"]
 body:
+  - type: input
+    id: creator
+    attributes:
+      label: "Your email address"
+      description: "Please enter your email address so that we can tag the resources with you as the creator."
+      placeholder: "email@ntnu.no"
+    validations:
+      required: true
   - type: dropdown
     id: Cluster
     attributes:
